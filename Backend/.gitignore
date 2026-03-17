@@ -1,8 +1,11 @@
-# dependencies
+ # dependencies
 node_modules/
+Backend/node_modules/
 
 # env files
 .env
+.env.*
+Backend/.env
 
 # build output
 dist/
