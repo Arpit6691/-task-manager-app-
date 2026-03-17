@@ -1,0 +1,288 @@
+ /* GLOBAL */
+
+body{
+  font-family: "Inter", "Segoe UI", Arial, Helvetica, sans-serif;
+  background:#f6f8fc;
+  margin:0;
+  color:#333;
+}
+
+/* NAVBAR */
+
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:18px 40px;
+  background:white;
+  border-bottom:1px solid #eee;
+}
+
+.navbar h2{
+  margin:0;
+  font-weight:600;
+  color:#2c3e50;
+}
+
+.logout-btn{
+  background:#ff5a5a;
+  border:none;
+  padding:8px 18px;
+  border-radius:8px;
+  color:white;
+  cursor:pointer;
+  font-size:14px;
+}
+
+.logout-btn:hover{
+  background:#e64949;
+}
+
+/* DASHBOARD */
+
+.dashboard-container{
+  max-width:900px;
+  margin:auto;
+  padding:40px 20px;
+}
+
+.dashboard-container h2{
+  margin-bottom:25px;
+  font-weight:600;
+}
+
+/* CREATE TASK FORM */
+
+.task-form{
+  display:flex;
+  gap:12px;
+  margin-bottom:20px;
+}
+
+.task-form input{
+  flex:1;
+}
+
+/* SEARCH + FILTER */
+
+.task-controls{
+  display:flex;
+  gap:12px;
+  margin-bottom:30px;
+}
+
+.task-controls input{
+  flex:1;
+}
+
+/* INPUTS */
+
+input{
+  padding:12px;
+  border-radius:10px;
+  border:1px solid #ddd;
+  font-size:14px;
+  outline:none;
+}
+
+input:focus{
+  border-color:#4f7cff;
+}
+
+/* SELECT */
+
+select{
+  padding:12px;
+  border-radius:10px;
+  border:1px solid #ddd;
+}
+
+/* BUTTONS */
+
+button{
+  padding:12px 20px;
+  border:none;
+  border-radius:10px;
+  background:#4f7cff;
+  color:white;
+  font-size:14px;
+  cursor:pointer;
+}
+
+button:hover{
+  background:#3c63d9;
+}
+
+/* TASK LIST */
+
+.task-list{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+
+/* TASK CARD */
+
+.task-card{
+  background:white;
+  padding:20px;
+  border-radius:12px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  box-shadow:0 4px 12px rgba(0,0,0,0.05);
+  transition:0.2s;
+}
+
+.task-card:hover{
+  transform:translateY(-2px);
+  box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+.task-card h3{
+  margin:0;
+  font-size:16px;
+}
+
+.task-card p{
+  margin:4px 0 8px;
+  color:#777;
+}
+
+/* STATUS BADGE */
+
+.status{
+  padding:5px 12px;
+  border-radius:20px;
+  font-size:12px;
+  font-weight:500;
+}
+
+.status.pending{
+  background:#fff3cd;
+  color:#856404;
+}
+
+.status.completed{
+  background:#d4edda;
+  color:#155724;
+}
+
+/* ACTION BUTTONS */
+
+.task-actions{
+  display:flex;
+  gap:10px;
+}
+
+.complete-btn{
+  background:#4caf50;
+  padding:8px 16px;
+  border-radius:8px;
+}
+
+.complete-btn:hover{
+  background:#3f9842;
+}
+
+.delete-btn{
+  background:#ff4d4d;
+  padding:8px 16px;
+  border-radius:8px;
+}
+
+.delete-btn:hover{
+  background:#e43b3b;
+}
+
+/* PAGINATION */
+
+.pagination{
+  margin-top:25px;
+  display:flex;
+  gap:10px;
+}
+
+.pagination button{
+  width:120px;
+}
+
+
+/* AUTH PAGES */
+
+.auth-container{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#4f7cff,#7aa6ff);
+}
+
+.auth-card{
+background:white;
+padding:40px;
+width:380px;
+border-radius:16px;
+box-shadow:0 20px 40px rgba(0,0,0,0.15);
+text-align:center;
+}
+
+.logo{
+margin-bottom:10px;
+font-weight:700;
+color:#4f7cff;
+}
+
+.auth-card h2{
+margin-bottom:25px;
+font-weight:500;
+}
+
+/* INPUT */
+
+.auth-card input{
+width:100%;
+padding:12px;
+margin-bottom:15px;
+border-radius:10px;
+border:1px solid #ddd;
+font-size:14px;
+outline:none;
+transition:0.2s;
+}
+
+.auth-card input:focus{
+border-color:#4f7cff;
+box-shadow:0 0 0 3px rgba(79,124,255,0.1);
+}
+
+/* BUTTON */
+
+.auth-card button{
+width:100%;
+padding:12px;
+border:none;
+border-radius:10px;
+background:#4f7cff;
+color:white;
+font-size:15px;
+cursor:pointer;
+transition:0.2s;
+}
+
+.auth-card button:hover{
+background:#3b64e0;
+}
+
+/* LINK */
+
+.auth-link{
+margin-top:15px;
+font-size:14px;
+}
+
+.auth-link a{
+color:#4f7cff;
+text-decoration:none;
+font-weight:500;
+}
